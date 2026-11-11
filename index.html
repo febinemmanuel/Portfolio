@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Febin Emmanuel – AI/ML and Data Science Portfolio</title>
+<meta name="description" content="Portfolio of Febin Emmanuel, an AI/ML and data science graduate from Kerala building computer vision, NLP and LLM applications.">
+<style>
+:root{--bg:#F2F4F7;--surface:#FFFFFF;--ink:#14202B;--mute:#5A6775;--line:#D5DBE3;--acc:#1B5CFF;--acc-ink:#FFFFFF;--warn:#D9480F;
+--serif:"Iowan Old Style","Palatino Linotype",Georgia,serif;--sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E151C;--surface:#16202A;--ink:#E8EDF2;--mute:#97A4B1;--line:#2A3846;--acc:#7DA2FF;--acc-ink:#0E151C;--warn:#FF8A4C}}
+:root[data-theme="dark"]{--bg:#0E151C;--surface:#16202A;--ink:#E8EDF2;--mute:#97A4B1;--line:#2A3846;--acc:#7DA2FF;--acc-ink:#0E151C;--warn:#FF8A4C}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 var(--sans);-webkit-text-size-adjust:100%}
+a{color:var(--acc);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:4px}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:var(--serif);line-height:1.15;margin:0}
+h2{font-size:1.9rem;margin-bottom:22px}
+section{padding:54px 0 8px}
+p{margin:0 0 14px;max-width:68ch}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 0;flex-wrap:wrap}
+.top nav{display:flex;gap:18px;flex-wrap:wrap;font-size:.95rem}
+.top nav a{color:var(--ink);text-decoration:none;border-bottom:2px solid transparent}
+.top nav a:hover{border-color:var(--acc)}
+.mode{background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:5px 13px;font:inherit;font-size:.85rem;cursor:pointer}
+.hero{padding:56px 0 30px}
+.box{position:relative;display:inline-block;border:3px solid var(--acc);padding:26px 26px 22px;margin-top:22px;max-width:100%}
+.box .tag{position:absolute;left:-3px;top:-27px;background:var(--acc);color:var(--acc-ink);font:600 .78rem/1 var(--sans);padding:7px 10px;white-space:nowrap}
+.box h1{font-size:clamp(2.3rem,8vw,4.4rem);letter-spacing:-.01em}
+.role{font-size:1.2rem;margin:20px 0 10px;color:var(--ink);font-weight:600}
+.lead{color:var(--mute);font-size:1.08rem}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.btn{display:inline-block;padding:11px 20px;border-radius:6px;text-decoration:none;font-weight:600;border:2px solid var(--acc)}
+.btn.p{background:var(--acc);color:var(--acc-ink)}
+.stats{display:flex;gap:34px;flex-wrap:wrap;margin-top:34px;padding-top:20px;border-top:1px solid var(--line)}
+.stats b{display:block;font:700 1.5rem var(--serif)}
+.stats span{color:var(--mute);font-size:.88rem}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px 34px}
+.skills h3{font-size:1.02rem;font-family:var(--sans);margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chips span{border:1px solid var(--line);background:var(--surface);padding:3px 10px;border-radius:5px;font-size:.88rem}
+.job{display:grid;grid-template-columns:150px 1fr;gap:6px 24px;padding:18px 0;border-top:1px solid var(--line)}
+.job .when{color:var(--mute);font-size:.9rem}
+.job h3{font-size:1.15rem}
+.job .where{color:var(--mute);font-size:.92rem;margin-bottom:6px}
+ul{margin:6px 0 0;padding-left:19px}
+li{margin-bottom:4px;max-width:68ch}
+.feat{background:var(--surface);border:2px solid var(--acc);padding:26px 24px 20px;margin:36px 0 0;position:relative}
+.feat .tag{position:absolute;left:-2px;top:-24px;background:var(--acc);color:var(--acc-ink);font:600 .75rem/1 var(--sans);padding:7px 10px}
+.feat h3{font-size:1.5rem;margin-bottom:6px}
+.feat .stack{color:var(--mute);font-size:.9rem;margin-bottom:12px}
+.minor{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;margin-top:36px}
+.minor article{border-left:4px solid var(--line);padding:2px 0 2px 18px}
+.minor h3{font-size:1.2rem;margin-bottom:4px}
+.minor .stack{color:var(--mute);font-size:.88rem;margin-bottom:8px}
+.metric{display:inline-block;color:var(--warn);font-weight:700}
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px 30px;font-size:1.05rem}
+.contact div span{display:block;color:var(--mute);font-size:.85rem}
+footer{margin-top:60px;padding:22px 0 34px;border-top:1px solid var(--line);color:var(--mute);font-size:.88rem}
+@media (max-width:640px){.job{grid-template-columns:1fr}.box{padding:22px 16px 18px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <strong style="font-family:var(--serif);font-size:1.1rem">Febin Emmanuel</strong>
+  <nav aria-label="Sections"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+  <button class="mode" id="mode" type="button" aria-label="Switch colour theme">Switch theme</button>
+</header>
+
+<section class="hero" id="top" style="padding-top:44px">
+  <div class="box"><span class="tag">ai_ml_engineer 0.97</span><h1>Febin Emmanuel</h1></div>
+  <p class="role">AI/ML and data science graduate from Kerala</p>
+  <p class="lead">I build models that detect, classify and explain: helmet detection with YOLOv8, sentiment analysis on election data, and a RAG-powered clothing sizing platform.</p>
+  <div class="cta"><a class="btn p" href="#projects">See my projects</a><a class="btn" href="mailto:febinemmanuel2003@gmail.com">Email me</a></div>
+  <div class="stats">
+    <div><b>4</b><span>AI/ML projects shipped</span></div>
+    <div><b>3</b><span>internships</span></div>
+    <div><b>B.Sc 2026</b><span>Applied Statistics and Data Science</span></div>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About</h2>
+  <p>I recently graduated with a B.Sc in Applied Statistics and Data Science from the University of Calicut (St. Benedict’s College, Kozhikode). Since then I’ve moved from statistics and EDA into computer vision, NLP and LLM applications through internships and team projects.</p>
+  <p>I like problems where a model has to work outside a notebook: live video, a web app a customer can use, a dashboard someone reads every morning. I’m particularly interested in applying data to finance and analytics, and I’m looking for an AI/ML specialist role where I can keep learning fast.</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div><h3>AI and machine learning</h3><div class="chips"><span>Supervised learning</span><span>Classification</span><span>Regression</span><span>Model evaluation</span><span>Hyperparameter tuning</span><span>PyTorch</span><span>TensorFlow</span><span>Keras</span></div></div>
+    <div><h3>Computer vision and NLP</h3><div class="chips"><span>YOLOv8</span><span>OpenCV</span><span>Tokenization</span><span>Vectorization</span><span>Sentiment analysis</span><span>Text preprocessing</span></div></div>
+    <div><h3>Generative AI</h3><div class="chips"><span>Gemini API</span><span>Prompt parsing</span><span>RAG</span><span>Embeddings</span><span>Image generation</span></div></div>
+    <div><h3>Programming and data</h3><div class="chips"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span><span>Matplotlib</span><span>Plotly</span><span>Streamlit</span><span>PostgreSQL</span><span>MongoDB</span></div></div>
+    <div><h3>Analysis and ways of working</h3><div class="chips"><span>Statistical modeling</span><span>EDA</span><span>Data cleaning</span><span>Dashboards</span><span>JIRA</span></div></div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="job"><div class="when">May 2026 – Oct 2026</div><div><h3>AI &amp; ML Specialist Intern</h3><div class="where">ICT Academy of Kerala, Trivandrum</div>
+    <ul><li>Worked on EDA, NLP and computer vision (OpenCV) tasks; built and evaluated models using Python, Keras and TensorFlow.</li><li>Applied tokenization and model evaluation techniques across ML pipelines for prediction and classification tasks.</li></ul></div></div>
+  <div class="job"><div class="when">Oct 2026</div><div><h3>AI/ML Intern</h3><div class="where">TrackGenesis</div>
+    <ul><li>Contributed to a helmet and rider-safety violation detection system using computer vision and deep learning.</li><li>Fine-tuned models, evaluated predictions and improved the reliability of the safety monitoring system.</li></ul></div></div>
+  <div class="job"><div class="when">Aug 2025</div><div><h3>Capstone Intern</h3><div class="where">IPCS Global, Kozhikode</div>
+    <ul><li>Analyzed real-world datasets with Python and statistical techniques, including data cleaning, preprocessing and EDA.</li><li>Used Pandas, NumPy and Matplotlib to find patterns and trends and turn them into actionable insights.</li></ul></div></div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <article class="feat">
+    <span class="tag">computer_vision 0.95</span>
+    <h3>Helmet &amp; Rider-Safety Violation Detection with Analytics</h3>
+    <div class="stack">Python, Ultralytics YOLOv8, OpenCV, PyTorch, Streamlit, Plotly, Pandas</div>
+    <p>Road safety enforcement on Kerala’s dense two-wheeler traffic needs more than image classification. This system detects riders and pillion passengers without helmets in real time and logs each violation for analysis.</p>
+    <ul>
+      <li>Fine-tuned YOLOv8 on a Google Colab GPU with augmentation (mosaic, rotation, brightness); benchmarked mAP@0.5, mAP@0.5:0.95, precision, recall and a per-class confusion matrix.</li>
+      <li>Built a Streamlit app for uploaded video and live webcam inference, with confidence and IoU sliders to trade false positives against missed detections.</li>
+      <li>Created an exportable violation event log and a trends dashboard showing peak violation hours and daily compliance rates.</li>
+      <li>Designed privacy-safe reports that never store number plates or faces.</li>
+    </ul>
+  </article>
+
+  <article class="feat">
+    <span class="tag">generative_ai 0.94</span>
+    <h3>AI-Powered Brand-Aware Clothing Customization System</h3>
+    <div class="stack">React, Node.js/Express, PostgreSQL with pgvector, Prisma, Gemini API, Cloudflare Workers AI, Docker</div>
+    <p>Sizes differ between brands, and most shops can’t reconcile your measurements, or the size you wear elsewhere, with a brand you’ve never tried. This platform lets users describe a garment in plain language and get a brand-accurate size recommendation.</p>
+    <ul>
+      <li>Built a RAG pipeline: Gemini embeddings with pgvector similarity search over brand size-chart documents.</li>
+      <li>Wrote a deterministic Size Engine that scores every size against chest, waist, hip, shoulder, sleeve, inseam and rise, and flags likely alterations.</li>
+      <li>Added an LLM prompt parser with a rule-based NLP fallback, and reference-guided image generation so users can see the customized garment.</li>
+      <li>Packaged the services with Docker Compose and tracked the work on a JIRA board.</li>
+    </ul>
+  </article>
+
+  <div class="minor">
+    <article>
+      <h3>Election Dataset Portugal</h3>
+      <div class="stack">Python, NLP, Scikit-learn</div>
+      <p>A sentiment analysis model on election data, with a full NLP workflow: normalization, tokenization and feature extraction, then model evaluation and comparison.</p>
+    </article>
+    <article>
+      <h3>Employee Attrition Prediction</h3>
+      <div class="stack">Python, Pandas, NumPy, Matplotlib, Scikit-learn</div>
+      <p>A predictive model that flags employees likely to leave, reaching <span class="metric">79% accuracy</span>. Included data cleaning, EDA and statistical analysis of the main attrition drivers.</p>
+    </article>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="job" style="border-top:none;padding-top:0"><div class="when">2023 – 2026</div><div><h3>B.Sc, Applied Statistics and Data Science</h3><div class="where">St. Benedict’s College, Kozhikode (University of Calicut)</div></div></div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>I’m open to AI/ML roles. The quickest way to reach me is email.</p>
+  <div class="contact">
+    <div><span>Email</span><a href="mailto:febinemmanuel2003@gmail.com">febinemmanuel2003@gmail.com</a></div>
+    <div><span>Phone</span><a href="tel:+919074442092">+91 90744 42092</a></div>
+    <div><span>LinkedIn</span><a href="https://linkedin.com/in/febin-emmanuel-703008302" rel="noopener">febin-emmanuel-703008302</a></div>
+    <div><span>GitHub</span><a href="https://github.com/febinemmanuel" rel="noopener">febinemmanuel</a></div>
+    <div><span>Based in</span>Wayanad, Kerala, India</div>
+  </div>
+</section>
+
+<footer>© 2026 Febin Emmanuel</footer>
+</div>
+<script>
+(function(){
+  var root=document.documentElement,btn=document.getElementById('mode');
+  btn.addEventListener('click',function(){
+    var dark=root.getAttribute('data-theme')?root.getAttribute('data-theme')==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;
+    root.setAttribute('data-theme',dark?'light':'dark');
+  });
+})();
+</script>
+</body>
+</html>
